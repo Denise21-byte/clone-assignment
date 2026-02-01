@@ -49,15 +49,15 @@ body {
 }
 
 .bg1 {
-    background-image: url("images/parallax1.jpg");
+    background-image: url("image1.webp");
 }
 
 .bg2 {
-    background-image: url("images/parallax2.jpg");
+    background-image: url("images2.jfif");
 }
 
 .bg3 {
-    background-image: url("images/parallax3.jpg");
+    background-image: url("image3.jfif");
 }
 
 .title-box {
@@ -114,7 +114,7 @@ footer {
 .search-btn {
   width: 50px;
   height: 40px;
-  background-color: #f57c00; /* orange like in image */
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,8 +140,124 @@ right:0;
   background-color: red;
 }
 
+/*card section*/
+.card-container {
+    display: flex;
+    position: relative;
+    margin-top: 1;
+    padding: 20px;
+    ;
 
+    
+}
 
+/* Flex layout for map + right side */
+.contact-wrapper {
+    display: flex;
+    gap: 30px;             /* space between map and right side */
+    align-items: flex-start;
+    margin-top: 20px;
+}
 
+/* Map styling */
+#map {
+    flex: 0 0 40%;         /* fixed 40% width */
+    border: 2px solid black;
+    border-radius: 10px;
+}
 
+/* Right side: contact info + form */
+.contact-right {
+    flex: 1;               /* take remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+/* Contact info styling */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-line i {
+    color: #f57c00;
+    transition: color 0.3s ease;
+}
+
+.contact-line:hover i,
+.contact-line:hover {
+    color: red;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f57c00;
+    box-shadow: 0 0 5px rgba(245,124,0,0.5);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: red;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    #map, .contact-right {
+        width: 100%;
+    }
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;            /* slightly smaller spacing */
+    width: 300px;          /* smaller form width */
+    margin: 0;             /* remove auto centering since it’s next to contact info */
+}

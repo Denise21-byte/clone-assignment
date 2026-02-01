@@ -39,15 +39,32 @@
     <h3>ABOUT ME</h3>
     <p>I love photography</p>
     <p>
-        We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
     </p>
 </section>
 
 <!-- PARALLAX 2 -->
 <section class="parallax bg2">
+    <div class="card-container">
+            <div><h3>14+</h3>
+            <p>partners</p></div>
+
+           <div><h3>55+</h3>
+            <p>projects done</p></div> 
+
+           <div><h3>89+</h3>
+            <p>happy clients</p></div> 
+
+            <div><h3>89+</h3>
+            <p>happy clients</p></div>
+            </div>
     <div class="title-box dark">
         <span class="title">PORTFOLIO</span>
+        
+
+            
+        </div>
+        
     </div>
 </section>
 
@@ -55,7 +72,18 @@
 <section id="portfolio" class="content gray">
     <h3>MY WORK</h3>
     <p>Here are some of my latest photos.</p>
+    <div class="gallery">
+        <img src="art1.jfif" alt="Photo 1">
+        <img src="art2.jfif" alt="Photo 2">
+        <img src="art3.jfif" alt="Photo 3">
+        <img src="art4.jfif" alt="Photo 4">
+        <img src="art5.jfif" alt="Photo 5">
+        <img src="art6.jfif" alt="Photo 6">
+        <img src="art7.jfif" alt="Photo 7">
+        <img src="art8.jfif" alt="Photo 8">
+        <button class="load-more">LOAD MORE</button>
 </section>
+
 
 <!-- PARALLAX 3 -->
 <section class="parallax bg3">
@@ -68,18 +96,50 @@
 <section id="contact" class="content">
     <h3>WHERE I WORK</h3>
 
-    <iframe
-        src="https://www.google.com/maps?q=Kigali&output=embed"
-        width="100%"
-        height="300"
-        style="border:0;"
-        loading="lazy">
-    </iframe>
+    <div class="contact-wrapper">
+        <!-- Map on left -->
+        <iframe id="map"
+            src="https://www.google.com/maps?q=Kigali&output=embed"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+        <!-- Right side: contact info + form -->
+        <div class="contact-right">
+            <div class="contact-info">
+                <div class="contact-line">
+                    <i class="fas fa-map-marker-alt"></i> Kigali, Rwanda
+                </div>
+                <div class="contact-line">
+                    <i class="fas fa-phone"></i> Phone: +250 788 123 456
+                </div>
+                <div class="contact-line">
+                    <i class="fas fa-envelope"></i> Email: denise@example.com
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Denise</p>
+    <button>Back to Top</button>
+    
+
 </footer>
 
 
