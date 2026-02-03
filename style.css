@@ -263,3 +263,32 @@ right:0;
 }
 
 
+.bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.fill {
+  height: 100%;
+  background-color: #555;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/* Percentages */
+.photoshop {
+  width: 75%;
+}
+
+.web {
+  width: 85%;
+}
+
+.photo {
+  width: 90%;
+}
